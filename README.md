@@ -24,7 +24,7 @@ Third challenge from the "Getting started on Frontend Mentor" learning path.
 ### Links
 
 - Solution URL: [Social Links Profile - GitHub Repo](https://github.com/dealencardavid/social-links-profile_frontendmentor)
-- Live Site URL: [Blog Preview Card Live](https://dealencardavid.github.io/blog-preview-card_frontendmentor/)
+- Live Site URL: [Social Links Profile Live](https://dealencardavid.github.io/social-links-profile_frontendmentor/)
 
 ## My process
 
