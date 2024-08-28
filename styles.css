@@ -1,0 +1,153 @@
+:root {
+  /* Brand colors */
+  --brand-green: #c4f82a;
+  /* Grays */
+  --gray-900: #141414;
+  --gray-700: #1f1f1f;
+  --gray-500: #333333;
+  /* Shade */
+  --white: #fff;
+
+  --spacing-500: 40px;
+  --spacing-300: 24px;
+  --spacing-200: 16px;
+  --spacing-150: 12px;
+  --spacing-100: 8px;
+  --spacing-50: 4px;
+
+  --font-size-preset-1: 24px;
+  --font-size-preset-2: 14px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--gray-900);
+  font-size: var(--font-size-preset-2);
+  font-family: "Inter";
+}
+
+main {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: var(--gray-700);
+  max-width: 384px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-300);
+  padding: var(--spacing-500);
+  border-radius: 12px;
+}
+
+.user-avatar {
+  height: 88px;
+  width: 88px;
+  border-radius: 100%;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-50);
+  align-items: center;
+}
+
+.user-info-name {
+  color: var(--white);
+  font-family: inherit;
+  font-size: var(--font-size-preset-1);
+  font-style: normal;
+  font-weight: 600;
+  line-height: 150%;
+  text-align: center;
+}
+
+.user-info-location {
+  color: var(--brand-green);
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-align: center;
+}
+
+.user-bio {
+  color: var(--white);
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  text-align: center;
+}
+
+.social-links {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--spacing-200);
+}
+
+.social-links li {
+  list-style: none;
+  width: 100%;
+}
+
+.social-links a {
+  text-decoration: none;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: var(--white);
+  background-color: var(--gray-500);
+  padding: var(--spacing-150);
+  border: none;
+  border-radius: 8px;
+
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+
+  cursor: pointer;
+  transition: all 0.15s ease-out;
+}
+
+/* ================== */
+/* Social Links Buttons Animations */
+/* ================== */
+
+.social-links a:hover,
+.social-links a:focus {
+  color: var(--gray-500);
+  background-color: var(--brand-green);
+}
+
+/* ================== */
+/* Responsiveness*/
+/* ================== */
+
+@media (max-width: 544px) {
+  main {
+    padding: 0px var(--spacing-300);
+  }
+
+  .card {
+    padding: var(--spacing-300);
+  }
+}
